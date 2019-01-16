@@ -1,7 +1,3 @@
-.skater-container{
-    border: cadetblue solid 1px;
-}
-
 body{
     background-image: url("../static/images/bg.jpg");
 }
@@ -66,15 +62,33 @@ li{
     margin-bottom: 20px;
 }
 
+h1{
+    content: '';
+  display: block;
+  position: absolute;
+  top: 40%;
+  bottom: 0;
+  left: 20%;
+  right: 0;
+    color: white;
+}
+
+.skater-container{
+    position: relative;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
 #lance{
-    height: 400px;
+    height: 100%;
 }
 #rodney{
-    height: 400px;
+    height: 100%;
 }
 #tommy{
-    height: 800px;
+    height: 100%;
 }
 #steve{
+    height: 100%
 
 }
