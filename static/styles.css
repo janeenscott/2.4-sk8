@@ -1,3 +1,80 @@
 .skater-container{
     border: cadetblue solid 1px;
 }
+
+body{
+    background-image: url("../static/images/bg.jpg");
+}
+
+img{
+    max-width: 100%;
+}
+
+.social{
+    text-align: right;
+}
+
+li{
+    display: inline-block;
+    background: #C4001B;
+    color: white;
+    padding: 5px;
+    float: right;
+    margin-bottom: 10px;
+}
+
+.hero{
+  position: relative;  /* for abs children */
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  /*background: #bbb url('https://picsum.photos/1200/302/') no-repeat;*/
+  background-size: cover;
+    border: white solid 4px;
+    clear: both;
+}
+
+.hero::before{
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.logo{
+ content: '';
+  display: block;
+  position: absolute;
+  top: 250px;
+  bottom: 0;
+  left: 100px;
+  right: 0;
+}
+
+.article{
+    background: white;
+    padding: 5px;
+    height: 100%;
+}
+
+.margin{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#lance{
+    height: 400px;
+}
+#rodney{
+    height: 400px;
+}
+#tommy{
+    height: 800px;
+}
+#steve{
+
+}

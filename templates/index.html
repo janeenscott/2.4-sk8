@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-    <Link rel="stylesheet" type="text/css" href="/static/styles.css">
+    <Link rel="stylesheet" type="text/css" href="../static/styles.css">
 
     <title>Powell Peralta</title>
   </head>
@@ -30,15 +30,18 @@
 
 </header>
   <div class="hero">
-<img src="/static/images/top-image.png" title="top-image" alt="man with camera">
-<img src="/static/images/peralta-logo.png" title="logo" alt="peralta logo">
+<img src="../static/images/top-image.png" title="top-image" alt="man with camera">
+  </div>
+  <div class="logo">
+<img src="../static/images/peralta-logo.png" title="logo" alt="peralta logo">
 <!--use banner image example concept to make overlay-->
   </div>
 
   
-<div class="row">
+<div class="row margin">
 
   <div class="col-md-4 col-sm-6">
+    <div class="article">
     <h2>Tony Hawk Foundation Raises Big Money At Celeb Fundraiser</h2>
     <p class="font-italic">October 10, 2013</p>
     <p>It was just over 90 degrees in Los Angeles,
@@ -48,8 +51,10 @@
     on Saturday at hte Green Acres Estate in Beverly Hills.</p>
     <h4 class="more"> [READ MORE]</h4>
   </div>
+    </div>
 
   <div class="col-md-4 col-sm-6">
+    <div class="article">
     <h2>Rodney Mullen: Pop an ollie and innovate! (TED Talk)</h2>
     <p class="font-italic">March 10, 2013</p>
     <p>The last thing Rodney Mullen, the godfather of street skating,
@@ -58,8 +63,10 @@
     environment it plays in drive the creation of new tricks -- fostering...</p>
     <h4 class="more"> [READ MORE]</h4>
   </div>
+  </div>
 
 <div class="col-md-4 col-sm-6">
+  <div class="article">
     <h2>Ray Barbee Talks 'Ban This'</h2>
     <p class="font-italic">October 4, 2013</p>
     <p>Since filming is in full swing for the Vans video Adventures
@@ -69,34 +76,42 @@
     step on a skateboard and Chris' childhood idol...</p>
     <h4 class="more"> [READ MORE]</h4>
   </div>
+</div>
 <!--end of row-->
 </div>
 
-  
-<div class="row">
-  <div class="skater-container">
-    <img src="/static/images/sk8-4.png">
-    <h1>LANCE MOUNTAIN</h1>
-  </div>
-  <div class="skater-container">
-    <img src="/static/images/sk8-3.png">
-    <h1>RODNEY MULLEN</h1>
-  </div>
-</div>  
-  
-<div class="row">
-  <div class="skater-container">
-    <img src="/static/images/sk8-2.png">
-    <h1>TOMMY GUERRERO</h1>
-  </div>
-</div>  
-  
-<div class="row">
-  <div class="skater-container">
-    <img src="/static/images/sk8-1.png">
-    <h1>STEVE CABALLERO</h1>
-  </div>
-</div>  
+
+  <div class="row"> <!--creates row that takes up all 12 columns and contains all skaters-->
+
+    <div class="col-md-8 col-sm-12"> <!--div takes up defined 8 columns-->
+      <div class="row"> <!--row will only take the 8 columns allowed by div above-->
+        <div class="col-md-6 col-sm-12">
+          <div class="skater-container" id="lance">
+            <img src="../static/images/sk8er-4.png">
+            <h1>LANCE MOUNTAIN</h1>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-12">
+          <div class="skater-container" id="rodney">
+            <img src="../static/images/sk8er-3.png">
+            <h1>RODNEY MULLEN</h1>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <div class="skater-container " id="steve">
+            <img src="../static/images/sk8er-1.png">
+            <h1>STEVE CABALLERO</h1>
+          </div>
+        </div>
+      </div> <!--closes 8 column wide row-->
+    </div> <!--closes 8 column div-->
+    <div class="col-md-4 col-sm-12">
+      <div class="skater-container" id="tommy">
+        <img src="../static/images/sk8er-2.png">
+        <h1>TOMMY GUERRERO</h1>
+      </div>
+    </div>
+  </div> <!--closes 12 column wide row-->
 
 
 
